@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:id="@+id/tempButtons"
+        android:layout_margin="50dp">
+
+        <EditText
+            android:id="@+id/tempInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/unitsTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tempInput"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tempInput"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tempInput"
+            android:layout_below="@+id/tempInput"
+            android:text="Convert to"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textTemp"/>
+
+
+        <Spinner
+            android:id="@+id/changeToTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTemp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textTemp"
+            android:background="@color/white"
+            android:layout_toRightOf="@+id/textTemp"
+            android:layout_below="@+id/unitsTemp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COnvert!!!"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textTemp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/tempConvert"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="35dp"
+        android:layout_below="@+id/tempButtons"
+        android:layout_marginTop="80dp"
+        android:hint="---"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tempOut"/>
+</RelativeLayout>

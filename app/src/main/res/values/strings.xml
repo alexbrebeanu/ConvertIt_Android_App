@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Convert It !!!</string>
+    <string-array name="units_length">
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Centimeters</item>
+        <item>Miles</item>
+        <item>Inches</item>
+        <item>Feet</item>
+    </string-array>
+    <string-array name="units_temp">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="weight_units">
+        <item>Kilograms</item>
+        <item>Grams</item>
+        <item>Milligrams</item>
+        <item>Pounds</item>
+        <item>Ounces</item>
+    </string-array>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp">
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Test Weight activity, bravo ba muie"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:layout_margin="50dp"
+        android:id="@+id/weightButtons">
+
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"/>
+
+        <Spinner
+            android:id="@+id/unitsWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/weightInput"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/weightInput"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weightInput"
+            android:layout_below="@+id/weightInput"
+            android:text="Convert to"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textWeight"/>
+
+
+        <Spinner
+            android:id="@+id/changeToWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textWeight"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textWeight"
+            android:background="@color/white"
+            android:layout_toRightOf="@+id/textWeight"
+            android:layout_below="@+id/unitsWeight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COnvert!!!"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textWeight"
+            android:layout_marginTop="50dp"
+            android:id="@+id/weightConvert"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="35dp"
+        android:layout_below="@+id/weightButtons"
+        android:layout_marginTop="80dp"
+        android:hint="---"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/weightOut"/>
+
+</RelativeLayout>
